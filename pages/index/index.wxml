@@ -1,0 +1,21 @@
+
+<w-swiper list="{{banners}}"></w-swiper>
+  <w-recommend recommends="{{recommends}}" />
+  <view class="popular">
+  <image src="/assets/images/home/recommend_bg.jpg" mode="widthFix"></image>
+  </view>
+
+
+<w-tab-control titles="{{['流行','新款','精选']}}"  bind:tabclick="tabClick" class="{{isTabFixed?'fixed':''}}" bindscroll="onShow" id="tab-control"/>
+<w-tab-control titles="{{['111','222','333']}}"  wx:if="{{isTabFixed}}" />
+
+
+
+
+<!-- 展示商品数据 -->
+
+ <w-goods goodslist="{{goods[currentType].list}}"/>
+  <w-back-top wx:if="{{showBackTop}}" />
+
+<view style="margin:20px">11111111111</view>
+
